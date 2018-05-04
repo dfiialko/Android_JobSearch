@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jobsearch.SearchParameters">
+<LinearLayout
+    android:id="@+id/layoutTop"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/transparent">
+
+        <EditText
+            android:id="@+id/txtTiel"
+            style="@android:style/Widget.Material.Light.AutoCompleteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="Title"
+            android:inputType="textPersonName"
+            android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+            android:textColor="#000000"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <EditText
+            android:id="@+id/txtCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtTiel"
+            android:layout_below="@+id/txtTiel"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="City"
+            android:inputType="textPersonName"
+            android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="75dp" />
+    </RelativeLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="172dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/layoutTop">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/cbMonster"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="19dp"
+                android:text="Search at:"
+                android:textAppearance="@android:style/TextAppearance.Material.Widget.ActionMode.Subtitle"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="141dp" />
+
+            <RadioGroup
+                android:id="@+id/rbGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="99dp"
+                android:layout_centerInParent="true"
+                android:checkedButton="@+id/cbMonster">
+
+                <RadioButton
+                    android:id="@+id/cbMonster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Monster" />
+
+                <RadioButton
+                    android:id="@+id/cbIndeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Craiglsist" />
+            </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSearch"
+        style="@style/com_facebook_loginview_silver_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutBottom"
+        android:layout_centerHorizontal="true"
+        android:text="Search" />
+
+    <Button
+        android:id="@+id/btnMyJobs"
+        style="@style/com_facebook_button_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="170dp"
+        android:text="My Jobs" />
+
+
+</RelativeLayout>

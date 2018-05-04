@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.layout.MainActivity">
+
+    <LinearLayout
+        android:layout_width="402dp"
+        android:layout_height="593dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="394dp"
+            android:layout_height="57dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="399dp">
+
+            <Button
+                android:id="@+id/btnLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Linear" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="393dp"
+            android:layout_height="55dp"
+            tools:layout_editor_absoluteX="9dp"
+            tools:layout_editor_absoluteY="80dp">
+
+            <Button
+                android:id="@+id/btnWebView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="WebView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="394dp"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="509dp">
+
+            <Button
+                android:id="@+id/btnRelative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Relative" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

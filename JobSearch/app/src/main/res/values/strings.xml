@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">JobSearch</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Search Multiple Websites!</string>
+    <string name="slide_1_desc">The easiest way to search through multiple sites!</string>
+
+    <string name="slide_2_title">Save your choice</string>
+    <string name="slide_2_desc">Add items to your list!</string>
+
+    <string name="slide_3_title">Simple app</string>
+    <string name="slide_3_desc">Simple interface allows for easier browsing!</string>
+
+</resources>
